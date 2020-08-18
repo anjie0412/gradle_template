@@ -16,6 +16,9 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
+task wrapper(type: Wrapper) {
+   gradleVersion = '2.0' // version required
+}
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
